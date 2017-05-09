@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Music</title>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -10,15 +12,77 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
     <link rel="stylesheet" href="css/magnific-popup.css">                                     <!-- Magnific pop up style -->
     <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="http://fonts.useso.com/css?family=Open+Sans:300,400">
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- load JS files -->
+
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
     <script src="js/jquery.touchSwipe.min.js"></script>
-    <script src="js/login.js"></script>
+
+    <!-- Templatemo scripts -->
+    <script>
+
+        $(document).ready(function(){
+
+            // Single page nav
+            if($(window).width() <= 1139) {
+                $('.tm-main-nav').singlePageNav({
+                    'currentClass' : "active",
+                    offset : 100
+                });
+            } else {
+                $('.tm-main-nav').singlePageNav({
+                    'currentClass' : "active",
+                    offset : 80
+                });
+            }
+
+            // Handle nav offset upon window resize
+            $(window).resize(function(){
+                if($(window).width() <= 1139) {
+                    $('.tm-main-nav').singlePageNav({
+                        'currentClass' : "active",
+                        offset : 100
+                    });
+                } else {
+                    $('.tm-main-nav').singlePageNav({
+                        'currentClass' : "active",
+                        offset : 80
+                    });
+                }
+            });
+
+            // Magnific pop up
+            $('.gallery-container').magnificPopup({
+                delegate: 'a', // child items selector, by clicking on it popup will open
+                type: 'image',
+                gallery: {enabled:true}
+                // other options
+            });
+
+            $('.carousel').carousel({
+                interval: 3000
+            })
+
+            // Enable carousel swiping
+            $(".carousel-inner").swipe( {
+                //Generic swipe handler for all directions
+                swipeLeft:function(event, direction, distance, duration, fingerCount) {
+                    $(this).parent().carousel('next');
+                },
+                swipeRight: function() {
+                    $(this).parent().carousel('prev');
+                }
+            });
+
+        });
+
+    </script>
 </head>
 <body>
 <div class="container">
@@ -41,6 +105,7 @@
                     </div>
             </section>
             <section id="recent" class="tm-content-box  tm-banner margin-b-10 ">
+			
             <div class="tm-content-box flex-2-col">
             <div class=" flex-item">
                 <h2 class="tm-section-title">Our Team</h2>
@@ -48,8 +113,50 @@
                 <p class="tm-section-description">Donec ex libero, fringilla vitae purus sit amet, rhoncus pharetra lorem. Pellentesque id sem id lacus ultricies vehicula. Aliquam rutrum mi non.</p>
             </div>
             <div class="flex-item">
-                <img src="img/about.jpg" alt="">
+                <img src="img/wy.jpg" alt="">
             </div>
+            </div>
+        </section>
+        <section id="ideas">
+            <div id="tmCarousel" class="carousel slide tm-content-box" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#tmCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#tmCarousel" data-slide-to="1" class=""></li>
+                    <li data-target="#tmCarousel" data-slide-to="2" class=""></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="carousel-item active">
+                        <div class="carousel-content">
+                            <div class="flex-item">
+                                <h2 class="tm-section-title">Our Ideas</h2>
+                                <p class="tm-section-description carousel-description">Suspendisse fermentum auctor turpis quis volutpat. Ut sed nibh non purus porta lacinia. Donec et euismod elit. Aenean vitae quam leo. Pellentesque interdum metus sed massa rutrum.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-content">
+                            <div class="flex-item">
+                                <h2 class="tm-section-title">Our Clients</h2>
+                                <p class="tm-section-description carousel-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel nisi pharetra nibh varius pharetra ac sagittis nisi. Etiam pharetra vestibulum hendrerit. Pellentesque interdum metus sed massa rutrum.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-content">
+                            <div class="flex-item">
+                                <h2 class="tm-section-title">Our Projects</h2>
+                                <p class="tm-section-description carousel-description">Donec ex libero, fringilla vitae purus sit amet, rhoncus pharetra lorem. Pellentesque id sem id lacus ultricies vehicula. Aliquam rutrum mi non. Pellentesque interdum metus sed massa rutrum.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </section>
     </div>
