@@ -290,7 +290,7 @@ body {
 	body {	padding-top: 100px;	}
 
 	.tm-sidebar {
-	    position: fixed;
+		position: fixed;
 	    width: 100%;
 	    top: 0;
 	    left: 0;

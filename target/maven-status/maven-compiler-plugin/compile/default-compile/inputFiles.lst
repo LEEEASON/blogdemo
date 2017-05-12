@@ -1,6 +1,11 @@
-G:\web-ssm\src\main\java\com\heitian\ssm\controller\MusicController.java
-G:\web-ssm\src\main\java\com\heitian\ssm\service\impl\UserServiceImpl.java
-G:\web-ssm\src\main\java\com\heitian\ssm\model\User.java
-G:\web-ssm\src\main\java\com\heitian\ssm\controller\UserController.java
-G:\web-ssm\src\main\java\com\heitian\ssm\service\UserService.java
-G:\web-ssm\src\main\java\com\heitian\ssm\dao\UserDao.java
+G:\web-ssm\src\main\java\com\leeeason\ssm\service\impl\MusicSerivceImpl.java
+G:\web-ssm\src\main\java\com\leeeason\ssm\service\impl\UserServiceImpl.java
+G:\web-ssm\src\main\java\com\leeeason\ssm\service\UserService.java
+G:\web-ssm\src\main\java\com\leeeason\ssm\model\User.java
+G:\web-ssm\src\main\java\com\leeeason\ssm\service\MusicService.java
+G:\web-ssm\src\main\java\com\leeeason\ssm\dao\UserDao.java
+G:\web-ssm\src\main\java\com\leeeason\ssm\model\Music.java
+G:\web-ssm\src\main\java\com\leeeason\ssm\test\color.java
+G:\web-ssm\src\main\java\com\leeeason\ssm\controller\MusicController.java
+G:\web-ssm\src\main\java\com\leeeason\ssm\controller\UserController.java
+G:\web-ssm\src\main\java\com\leeeason\ssm\test\test.java

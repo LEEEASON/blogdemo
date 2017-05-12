@@ -47,7 +47,7 @@
             <div class="tm-content-box flex-2-col">
                 <div class=" flex-item">
                     <h2 class="tm-section-title">Our Team</h2>
-                    <p class="tm-section-description">${result}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel nisi pharetra nibh varius pharetra ac sagittis nisi. Etiam pharetra vestibulum hendrerit.</p>
+                    <p class="tm-section-description">${music}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel nisi pharetra nibh varius pharetra ac sagittis nisi. Etiam pharetra vestibulum hendrerit.</p>
                     <p class="tm-section-description">Donec ex libero, fringilla vitae purus sit amet, rhoncus pharetra lorem. Pellentesque id sem id lacus ultricies vehicula. Aliquam rutrum mi non.</p>
                 </div>
                 <div class="flex-item">
@@ -56,5 +56,6 @@
             </div>
         </section>
     </div>
+</div>
 </body>
 </html>
